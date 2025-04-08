@@ -1,88 +1,161 @@
-# 📊 Stock Analysis Toolkit – Crew AI
+# Darwin AI: La revolución conversacional que tu negocio necesitaba
 
-This project is a modular and extensible toolkit for analyzing individual stocks using a combination of **fundamental metrics**, **technical indicators**, and **risk analytics**. It pulls data from **Yahoo Finance via `yfinance`**, processes it using **Pandas** and **NumPy**, and optionally serves insights through a **Streamlit dashboard**. The toolkit is designed for integration with **LLM agents via `CrewAI` and `ChatGroq`**, enabling automated reasoning and reporting.
+En un mundo donde la inmediatez manda, **Darwin AI** te permite automatizar hasta el **75% de tus interacciones con clientes** sin perder el toque humano. Gracias a sus *empleados digitales*, puedes transformar tareas complejas en procesos simples, integrados a tu CRM y supervisados para garantizar resultados impecables.
 
----
+## 🚀 ¿Qué es Darwin?
 
-## 🧩 1. Data Collection
+**Darwin AI** es una solución de **IA conversacional** que actúa como un equipo de *empleados digitales especializados*. Automatiza tareas repetitivas y críticas, mejora la eficiencia operativa y mantiene tus datos siempre actualizados. Todo, **sin alucinaciones ni errores**.
 
-- **Real-Time and Historical Data**  
-  Stock data is fetched using `yfinance`, including daily historical prices, financial statements, and key company info.
-  
-- **News Scraper**  
-  Retrieves relevant stock news headlines from `yfinance.Ticker.news`.
+## 🤖 Múltiples IAs para cada área de tu negocio
 
----
+Con Darwin, no estás contratando un chatbot más. Estás incorporando empleados virtuales que:
 
-## 📈 2. Fundamental Analysis
+- Responden por **WhatsApp**, **Instagram** o **llamadas telefónicas**.  
+- Rellenan campos en tu **CRM** y **hojas de cálculo** automáticamente.  
+- Detectan cuándo **escalar una conversación** a un humano.  
+- **Aprenden y mejoran** con cada interacción.
 
-- **Valuation Metrics**
-  - Price-to-Earnings Ratio (PE)
-  - Forward PE
-  - Price-to-Book (PB)
-  - Enterprise Value-to-EBITDA (EV/EBITDA)
+Cada *Empleado-IA* está diseñado para cumplir funciones específicas en tu flujo de trabajo, desde ventas hasta atención al cliente, siempre manteniendo la **empatía** y la **precisión** como pilares.
 
-- **Profitability**
-  - EPS (ttm)
-  - Return on Equity (ROE)
-  - Net Margin
-  - Gross Margin
-  - Free Cash Flow
+## 🛠️ Integrado con tus herramientas favoritas
 
-- **Growth**
-  - Revenue and earnings growth trends
-  - Year-over-year comparisons
+Darwin se conecta sin fricciones con tu stack actual: **CRMs**, **ERPs**, bases de datos y más. Esto permite:
 
----
+- Automatización real y contextual.  
+- Personalización por **industria** y **país**.  
+- Respuestas en **tiempo real** con información actualizada.
 
-## 📉 3. Risk Analysis
+## 📈 Resultados que hablan por sí solos
 
-- **Volatility**  
-  Standard deviation of log returns.
+Las empresas que usan Darwin ya están viendo mejoras extraordinarias:
 
-- **Value at Risk (VaR)**  
-  Uses historical simulation to estimate the potential daily loss at a given confidence level.
+- **+90%** en tasa de contacto (Carlos Gudiño, e-commerce).
+- **–75%** en tiempo de gestión de ventas (Ignacio Paganini, alpozo.com).
+- **2X** en conversión de eventos (Guido Miedvietzky, WonderLab).
+- **100%** de cobertura nocturna (Valentina Sielecki, The Glow Factor).
 
-- **Sharpe & Sortino Ratios**  
-  Evaluate risk-adjusted return with/without penalizing upside volatility.
+*"Darwin no es solo una herramienta. Es parte de nuestro equipo."*  
+— Gabriela Goldszer, Ocampo Propiedades
 
-- **Beta Calculation**  
-  Estimates the stock’s sensitivity to market movement.
+## 🧠 Tecnología con alma
 
-- **Max Drawdown**  
-  Measures the largest historical peak-to-trough drop.
+Los empleados-IA de Darwin no solo automatizan. Son empáticos, contextuales y humanos. La tecnología detrás de Darwin incorpora:
 
----
+- **Análisis de sentimiento**  
+- **Auditorías humanas**  
+- **Pruebas automáticas**  
+- **Aprendizaje continuo**
 
-## 📊 4. Technical Indicators
+Esto asegura interacciones naturales, sin errores, y con capacidad de mejora constante.
 
-- **Moving Averages**  
-  Simple and exponential MAs to assess trends.
+## 🏁 Implementación en menos de 15 días
 
-- **Momentum**
-  - RSI (Relative Strength Index)
-  - MACD (Moving Average Convergence Divergence)
+Empieza a usar Darwin sin complicaciones técnicas. Nuestro equipo se encarga de todo para que en cuestión de días tengas tu propio equipo de IA operativo.
 
-- **Trend Detection**  
-  Classifies trend as bullish, bearish, or neutral using moving average crossovers.
+## 🌎 Aplicaciones por industria
 
----
+Darwin ya está transformando industrias como:
 
-## 🧠 5. LLM & Agent Integration
+- **Retail**: Gestión de pedidos y atención inmediata.
+- **Real Estate**: Automatización de leads y seguimiento.
+- **Educación**: Inscripción y orientación a estudiantes.
+- **Automotriz**: Coordinación de servicios e inventarios.
 
-- **ChatGroq + LLaMA 3 (70B)**  
-  The code integrates with Groq-hosted LLaMA 3 for fast, context-aware analysis using `ChatGroq`.
+## 🌟 Servicio como Software
 
-- **CrewAI-Ready**  
-  Designed to be used with multi-agent frameworks like CrewAI. Each function can serve as a tool for reasoning agents in financial report generation, portfolio evaluation, or conversational workflows.
+Olvídate del SaaS tradicional. Darwin inaugura la era del **Servicio como Software**: empleados digitales que se comportan como miembros reales del equipo.
 
----
+## 💬 ¿Estás listo para escalar tu negocio con IA?
 
-## 🛠️ 6. Utilities & Structure
+👉 **Prueba Darwin Ahora**  
+Conecta con tu audiencia, automatiza tareas clave y da el salto al futuro. Darwin no reemplaza a tu equipo: lo potencia.
 
-- Modular functions for:
-  - Trend classification
-  - Ratio formatting
-  - Data preprocessing
+## AI TEAM AGENT
 
-- Easily extendable with new indicators or output formats (e.g., PDF reporting, chatbot UI).
+Conocé a los miembros de tu nuevo equipo de asistentes inteligentes. Cada uno está diseñado para resolver tareas específicas de tu negocio con eficiencia, empatía y precisión. Descubrí cómo trabajan y contratá al que mejor se adapte a tus necesidades.
+
+### Alba – Calificadora de Leads
+
+**Alba** transforma prospectos en oportunidades reales. Interactúa con tus leads, los califica según tus criterios, responde dudas frecuentes y agenda reuniones. ¡Es como tener una SDR 24/7!
+
+Lo que hace por vos:
+
+- Califica leads automáticamente según tus requisitos.
+- Responde preguntas sobre tu catálogo de productos o servicios.
+- Gestiona agendas y coordina reuniones.
+- Completa campos en tu CRM sin errores.
+- Se comunica por WhatsApp, Instagram o llamadas, donde estén tus clientes.
+
+Impacto en números:
+
+- **5x** más leads calificados.
+- **+50%** de conversaciones resueltas.
+- **<3 min** en responder.
+
+Algo sobre ella: Apasionada por las conexiones humanas, **Alba** disfruta encontrar el match perfecto entre tus ofertas y las necesidades del cliente. Explora mercados locales y adapta su estilo a tu marca.  
+➡️ **Alba está lista para ayudarte a cerrar más ventas sin perder tiempo.**
+
+### Sofía – Especialista en Post-Venta
+
+**Sofía** se enfoca en generar más ingresos con los clientes que ya te conocen. Identifica oportunidades de venta adicional, fomenta la lealtad y organiza seguimientos post-venta efectivos.
+
+Lo que hace por vos:
+
+- Detecta oportunidades de up-selling y cross-selling.
+- Brinda soporte de catálogo personalizado.
+- Programa seguimientos automáticos.
+- Actualiza tu CRM con la información clave.
+- Se comunica a través de los canales favoritos de tus clientes.
+
+Impacto en números:
+
+- **4x** más ventas adicionales.
+- **+60%** tasa de reengagement.
+- **+50%** crecimiento de ingresos por cliente.
+
+Algo sobre ella: Fan de la cocina y las conexiones duraderas, **Sofía** cree en crear experiencias memorables post-compra. Ella convierte cada interacción en una nueva oportunidad.  
+➡️ **Sofía está lista para ayudarte a fidelizar clientes mientras aumentás tus ingresos.**
+
+### Lucas – Especialista en Cobranzas
+
+**Lucas** se encarga de recuperar pagos atrasados de forma profesional y empática. Su comunicación efectiva evita fricciones y reactiva leads morosos con un trato humano.
+
+Lo que hace por vos:
+
+- Recuerda a los clientes sobre pagos pendientes.
+- Ofrece opciones de pago flexibles con enlaces seguros.
+- Resuelve dudas sobre facturación o pagos.
+- Mantiene actualizado tu ERP con registros automáticos.
+- Se comunica por WhatsApp o llamadas telefónicas.
+
+Impacto en números:
+
+- **70%** de éxito en recuperación de pagos.
+- **+50%** de reengagement de morosos.
+- **+50%** leads reactivados.
+
+Algo sobre él: Estratega nato, **Lucas** disfruta tanto los juegos de mesa como resolver situaciones complejas. Está enfocado en recuperar tu dinero sin poner en riesgo la relación con tus clientes.  
+➡️ **Lucas está listo para optimizar tus cobranzas y recuperar lo que es tuyo.**
+
+### Eva – Analista de Experiencia del Cliente
+
+**Eva** se asegura de que tus clientes sean escuchados. Mide la satisfacción, gestiona feedback, resuelve problemas antes de que escalen y convierte a los clientes felices en promotores de tu marca.
+
+Lo que hace por vos:
+
+- Realiza encuestas de satisfacción automatizadas.
+- Motiva a tus clientes felices a dejar reseñas.
+- Escala problemas de forma inmediata.
+- Enlaza insights con tu CRM.
+- Se comunica en los canales que prefieren tus clientes.
+
+Impacto en números:
+
+- **70%** tasa de respuesta de encuestas.
+- **4x** más feedback que métodos tradicionales.
+- **<1 min** para escalar problemas.
+
+Algo sobre ella: Amante del storytelling, **Eva** encuentra historias en cada opinión de tus clientes. Su misión es ayudarte a escribir los capítulos más felices de tu marca.  
+➡️ **Eva está lista para ayudarte a crear experiencias inolvidables y clientes leales.**
+
+
