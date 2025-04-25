@@ -1,161 +1,55 @@
-# Darwin AI: La revolución conversacional que tu negocio necesitaba
+# Intelligent Assistant for Chevrolet Dealership
 
-En un mundo donde la inmediatez manda, **Darwin AI** te permite automatizar hasta el **75% de tus interacciones con clientes** sin perder el toque humano. Gracias a sus *empleados digitales*, puedes transformar tareas complejas en procesos simples, integrados a tu CRM y supervisados para garantizar resultados impecables.
+## Description
 
-## 🚀 ¿Qué es Darwin?
+This project is an intelligent assistant designed for a Chevrolet dealership, aimed at optimizing customer management, inventory, and service appointments. It leverages artificial intelligence and integrates with Google and Supabase tools to enhance operational efficiency and improve the customer experience.
 
-**Darwin AI** es una solución de **IA conversacional** que actúa como un equipo de *empleados digitales especializados*. Automatiza tareas repetitivas y críticas, mejora la eficiencia operativa y mantiene tus datos siempre actualizados. Todo, **sin alucinaciones ni errores**.
+---
 
-## 🤖 Múltiples IAs para cada área de tu negocio
+## Workflow Overview of How Components Work
 
-Con Darwin, no estás contratando un chatbot más. Estás incorporando empleados virtuales que:
+The workflow of the assistant integrates various components to handle tasks such as customer inquiries, service appointments, and inventory management. Here’s a step-by-step overview of how the components interact in a typical workflow:
 
-- Responden por **WhatsApp**, **Instagram** o **llamadas telefónicas**.  
-- Rellenan campos en tu **CRM** y **hojas de cálculo** automáticamente.  
-- Detectan cuándo **escalar una conversación** a un humano.  
-- **Aprenden y mejoran** con cada interacción.
+1. **Customer Interaction**: The customer sends a message via WhatsApp, which triggers the assistant using the WhatsApp Trigger component. The assistant responds through the OpenAI Chat Model to engage in conversation.
 
-Cada *Empleado-IA* está diseñado para cumplir funciones específicas en tu flujo de trabajo, desde ventas hasta atención al cliente, siempre manteniendo la **empatía** y la **precisión** como pilares.
+2. **Request Handling**: Based on the customer's inquiry, the Switch component directs the request to the appropriate function, such as checking available vehicles or scheduling a service appointment.
 
-## 🛠️ Integrado con tus herramientas favoritas
+3. **Service Scheduling**: If the customer wants to book a service appointment, the assistant checks the Google Calendar (using the Read Calendar component) for availability. It can also create, update, or delete calendar events as needed using the Create, Update, or Delete Calendar components.
 
-Darwin se conecta sin fricciones con tu stack actual: **CRMs**, **ERPs**, bases de datos y más. Esto permite:
+4. **Inventory Management**: For inquiries about vehicle availability, the assistant can access Google Sheets (using Google Sheets Read) to retrieve the latest inventory data. It can also add new vehicles or update existing inventory entries with Google Sheets Add Rows or Update Rows.
 
-- Automatización real y contextual.  
-- Personalización por **industria** y **país**.  
-- Respuestas en **tiempo real** con información actualizada.
+5. **Personalized Experience**: Throughout the conversation, the Simple Memory component stores relevant information, allowing the assistant to provide a personalized experience by remembering past interactions.
 
-## 📈 Resultados que hablan por sí solos
+6. **Notifications**: Once an appointment is confirmed, the assistant sends a notification to the customer via WhatsApp Business. If required, it may also send follow-up emails or confirmations using Gmail.
 
-Las empresas que usan Darwin ya están viendo mejoras extraordinarias:
+7. **Search Functionality**: For more complex queries or searches, the Supabase Vector Store and OpenAI Embeddings are used to enable semantic search, allowing the assistant to provide more accurate and relevant results related to vehicles and services.
 
-- **+90%** en tasa de contacto (Carlos Gudiño, e-commerce).
-- **–75%** en tiempo de gestión de ventas (Ignacio Paganini, alpozo.com).
-- **2X** en conversión de eventos (Guido Miedvietzky, WonderLab).
-- **100%** de cobertura nocturna (Valentina Sielecki, The Glow Factor).
+---
 
-*"Darwin no es solo una herramienta. Es parte de nuestro equipo."*  
-— Gabriela Goldszer, Ocampo Propiedades
+## Deep Dive into Components
 
-## 🧠 Tecnología con alma
+### 1. WhatsApp Trigger
+- The **WhatsApp Trigger** is the first point of contact for the customer. When a user sends a message to the dealership’s WhatsApp Business number, it triggers the assistant’s workflow. The assistant can respond to queries, initiate actions like scheduling appointments, or guide users to the right service.
 
-Los empleados-IA de Darwin no solo automatizan. Son empáticos, contextuales y humanos. La tecnología detrás de Darwin incorpora:
+### 2. Switch
+- The **Switch** component is responsible for routing requests. It acts as a decision point in the workflow, ensuring that each query is handled by the correct component. If a customer asks about available vehicles, for example, the request will be forwarded to the inventory management system; if they inquire about service appointments, it will route the request to the calendar and appointment scheduling components.
 
-- **Análisis de sentimiento**  
-- **Auditorías humanas**  
-- **Pruebas automáticas**  
-- **Aprendizaje continuo**
+### 3. AI Agent
+- The **AI Agent** plays the role of the core brain of the assistant. It leverages machine learning algorithms to understand and interpret the customer’s intent based on the query and interacts with the appropriate components to provide a response or take action.
 
-Esto asegura interacciones naturales, sin errores, y con capacidad de mejora constante.
+### 4. OpenAI Chat Model
+- The **OpenAI Chat Model** powers the conversational aspect of the assistant. It is designed to handle natural language processing (NLP) tasks, ensuring smooth and meaningful interactions. It can respond to customer inquiries, explain product features, or guide users through the dealership’s offerings.
 
-## 🏁 Implementación en menos de 15 días
+### 5. Google Sheets Integration
+- The **Google Sheets Read** and **Google Sheets Add/Update Rows** components integrate with Google Sheets to provide real-time access to the dealership's data, such as vehicle inventory or customer information. This integration ensures that the assistant can keep data up to date and respond accurately to customer inquiries regarding product availability, pricing, and more.
 
-Empieza a usar Darwin sin complicaciones técnicas. Nuestro equipo se encarga de todo para que en cuestión de días tengas tu propio equipo de IA operativo.
+### 6. Calendar Management
+- The **Calendar** components (Read, Create, Update, and Delete) integrate with Google Calendar, making it easy for the assistant to manage service appointments. Customers can schedule, modify, or cancel appointments directly through the assistant, which will update the dealership's calendar accordingly.
 
-## 🌎 Aplicaciones por industria
+### 7. Notifications
+- The **WhatsApp Business** and **Gmail** components send notifications and confirmations to customers. Once a customer books a service or test drive, the assistant sends confirmation messages through WhatsApp or email, ensuring that the customer is always informed about the status of their appointment.
 
-Darwin ya está transformando industrias como:
+---
 
-- **Retail**: Gestión de pedidos y atención inmediata.
-- **Real Estate**: Automatización de leads y seguimiento.
-- **Educación**: Inscripción y orientación a estudiantes.
-- **Automotriz**: Coordinación de servicios e inventarios.
-
-## 🌟 Servicio como Software
-
-Olvídate del SaaS tradicional. Darwin inaugura la era del **Servicio como Software**: empleados digitales que se comportan como miembros reales del equipo.
-
-## 💬 ¿Estás listo para escalar tu negocio con IA?
-
-👉 **Prueba Darwin Ahora**  
-Conecta con tu audiencia, automatiza tareas clave y da el salto al futuro. Darwin no reemplaza a tu equipo: lo potencia.
-
-## AI TEAM AGENT
-
-Conocé a los miembros de tu nuevo equipo de asistentes inteligentes. Cada uno está diseñado para resolver tareas específicas de tu negocio con eficiencia, empatía y precisión. Descubrí cómo trabajan y contratá al que mejor se adapte a tus necesidades.
-
-### Alba – Calificadora de Leads
-
-**Alba** transforma prospectos en oportunidades reales. Interactúa con tus leads, los califica según tus criterios, responde dudas frecuentes y agenda reuniones. ¡Es como tener una SDR 24/7!
-
-Lo que hace por vos:
-
-- Califica leads automáticamente según tus requisitos.
-- Responde preguntas sobre tu catálogo de productos o servicios.
-- Gestiona agendas y coordina reuniones.
-- Completa campos en tu CRM sin errores.
-- Se comunica por WhatsApp, Instagram o llamadas, donde estén tus clientes.
-
-Impacto en números:
-
-- **5x** más leads calificados.
-- **+50%** de conversaciones resueltas.
-- **<3 min** en responder.
-
-Algo sobre ella: Apasionada por las conexiones humanas, **Alba** disfruta encontrar el match perfecto entre tus ofertas y las necesidades del cliente. Explora mercados locales y adapta su estilo a tu marca.  
-➡️ **Alba está lista para ayudarte a cerrar más ventas sin perder tiempo.**
-
-### Sofía – Especialista en Post-Venta
-
-**Sofía** se enfoca en generar más ingresos con los clientes que ya te conocen. Identifica oportunidades de venta adicional, fomenta la lealtad y organiza seguimientos post-venta efectivos.
-
-Lo que hace por vos:
-
-- Detecta oportunidades de up-selling y cross-selling.
-- Brinda soporte de catálogo personalizado.
-- Programa seguimientos automáticos.
-- Actualiza tu CRM con la información clave.
-- Se comunica a través de los canales favoritos de tus clientes.
-
-Impacto en números:
-
-- **4x** más ventas adicionales.
-- **+60%** tasa de reengagement.
-- **+50%** crecimiento de ingresos por cliente.
-
-Algo sobre ella: Fan de la cocina y las conexiones duraderas, **Sofía** cree en crear experiencias memorables post-compra. Ella convierte cada interacción en una nueva oportunidad.  
-➡️ **Sofía está lista para ayudarte a fidelizar clientes mientras aumentás tus ingresos.**
-
-### Lucas – Especialista en Cobranzas
-
-**Lucas** se encarga de recuperar pagos atrasados de forma profesional y empática. Su comunicación efectiva evita fricciones y reactiva leads morosos con un trato humano.
-
-Lo que hace por vos:
-
-- Recuerda a los clientes sobre pagos pendientes.
-- Ofrece opciones de pago flexibles con enlaces seguros.
-- Resuelve dudas sobre facturación o pagos.
-- Mantiene actualizado tu ERP con registros automáticos.
-- Se comunica por WhatsApp o llamadas telefónicas.
-
-Impacto en números:
-
-- **70%** de éxito en recuperación de pagos.
-- **+50%** de reengagement de morosos.
-- **+50%** leads reactivados.
-
-Algo sobre él: Estratega nato, **Lucas** disfruta tanto los juegos de mesa como resolver situaciones complejas. Está enfocado en recuperar tu dinero sin poner en riesgo la relación con tus clientes.  
-➡️ **Lucas está listo para optimizar tus cobranzas y recuperar lo que es tuyo.**
-
-### Eva – Analista de Experiencia del Cliente
-
-**Eva** se asegura de que tus clientes sean escuchados. Mide la satisfacción, gestiona feedback, resuelve problemas antes de que escalen y convierte a los clientes felices en promotores de tu marca.
-
-Lo que hace por vos:
-
-- Realiza encuestas de satisfacción automatizadas.
-- Motiva a tus clientes felices a dejar reseñas.
-- Escala problemas de forma inmediata.
-- Enlaza insights con tu CRM.
-- Se comunica en los canales que prefieren tus clientes.
-
-Impacto en números:
-
-- **70%** tasa de respuesta de encuestas.
-- **4x** más feedback que métodos tradicionales.
-- **<1 min** para escalar problemas.
-
-Algo sobre ella: Amante del storytelling, **Eva** encuentra historias en cada opinión de tus clientes. Su misión es ayudarte a escribir los capítulos más felices de tu marca.  
-➡️ **Eva está lista para ayudarte a crear experiencias inolvidables y clientes leales.**
-
+This detailed breakdown of the workflow and components ensures that all tasks are automated and optimized, improving both operational efficiency and customer satisfaction.
 
